@@ -8,5 +8,6 @@ WriteMakefile(
     ABSTRACT     => '',
     PREREQ_PM    => {
                      'Test::Simple' => 0.44,
+                     'Astro::MoonPhase' => 0,
                     },
 );
