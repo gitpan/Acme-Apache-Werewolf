@@ -1,8 +1,8 @@
 MANIFEST
 LICENSE
 README
-Todo
 Changes
+Todo
 lib/Acme/Apache/Werewolf.pm
 t/001_load.t
 Makefile.PL

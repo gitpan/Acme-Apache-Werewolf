@@ -1,6 +1,3 @@
-Revision history for Perl module Acme::Apache::Werewolf
-
-0.01 Sun Nov 16 17:10:06 2003
-	- original version; created by ExtUtils::ModuleMaker 0.32
-
+1.01    Added dependencies
+1.02    Added useful README file
 

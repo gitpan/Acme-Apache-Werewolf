@@ -1,16 +1,42 @@
-pod2text Acme::Apache::Werewolf.pm > README
+NAME
+    Acme::Apache::Werewolf
 
-If this is still here it means the programmer was too lazy to create the readme file.
+SYNOPSIS
+        <Directory /fullmoon>
+            PerlAccessHandler Acme::Apache::Werewolf
+            PerlSetVar MoonLength 4
+        </Directory>
 
-You can create it now by using the command shown above from this directory.
+DESCRIPTION
+    This mod_perl handler performs the important function of keeping people
+    out of a directory during the full moon.
 
-At the very least you should be able to use this set of instructions
-to install the module...
+USAGE
+    In your configuration file, put the following configuration
 
-perl Makefile.PL
-make
-make test
-make install
+        <Directory /fullmoon>
+            PerlAccessHandler Acme::Apache::Werewolf
+            PerlSetVar MoonLength 4
+        </directory>
 
+    The MoonLength variable indicates how long a period you want to consider
+    to be the full moon. In the above configuration, the full moon is 4
+    days, which would be from day 12 through day 16 of the lunar cycle. It
+    is wise to err on the side of caution and make this too large, rather
+    than make it too small, and risk the wrath of werewolves.
 
-If you are on a windows box you should use 'nmake' rather than 'make'.
+AUTHOR
+        Rich Bowen
+            rbowen@rcbowen.com
+            http://rcbowen.com/
+
+COPYRIGHT
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+    The full text of the license can be found in the LICENSE file included
+    with this module.
+
+SEE ALSO
+    Astro::MoonPhase
+
