@@ -4,7 +4,7 @@ use Astro::MoonPhase;
 use Apache::Constants qw(:common);
 
 use vars qw($VERSION);
-$VERSION = '1.03';
+$VERSION = '1.04';
 
 sub handler {
     my $r = shift;
@@ -19,6 +19,8 @@ sub handler {
           $SunDist,
           $SunAng ) = phase(time);
 
+    # If you hear him howling around your kitchen door
+    # Better not let him in
     return FORBIDDEN unless abs(14 - $MoonAge) > ($moonlength/2);
     return OK;
 }
@@ -36,8 +38,11 @@ Acme::Apache::Werewolf
 
 =head1 DESCRIPTION
 
-This mod_perl handler performs the important function of keeping people
-out of a directory during the full moon.
+This mod_perl handler performs the important function of keeping
+werewolves out of a directory during the full moon.
+
+    Better stay away from him
+    He'll rip your lungs out, Jim
 
 =head1 USAGE
 
@@ -68,11 +73,17 @@ it and/or modify it under the same terms as Perl itself.
 The full text of the license can be found in the
 LICENSE file included with this module.
 
+Garlic sold separately. No warranty of werewolf protection implied. May
+be prohibited in some states. Lon Chaney and Warren Zevon references
+provided free of charge.
+
 =head1 SEE ALSO
 
 Astro::MoonPhase
 
+I'd like to meet his tailor.
+
 =cut
 
-1; 
+'His hair was perfect'; 
 

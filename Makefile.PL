@@ -1,11 +1,10 @@
 use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
 WriteMakefile(
     NAME         => 'Acme::Apache::Werewolf',
-    VERSION_FROM => 'lib/Acme/Apache/Werewolf.pm', # finds $VERSION
-    AUTHOR       => 'A. U. Thor (a.u.thor@a.galaxy.far.far.away)',
-    ABSTRACT     => '',
+    VERSION_FROM => 'lib/Acme/Apache/Werewolf.pm',
+    AUTHOR       => 'Rich Bowen (rbow@cpan.org)',
+    ABSTRACT     => 
+         'Keep werewolves out of your website during the full moon',
     PREREQ_PM    => {
                      'Test::Simple' => 0.44,
                      'Astro::MoonPhase' => 0,
