@@ -4,7 +4,7 @@ use Astro::MoonPhase;
 use Apache::Constants qw(:common);
 
 use vars qw($VERSION);
-$VERSION = '1.04';
+$VERSION = '1.05';
 
 sub handler {
     my $r = shift;
@@ -76,6 +76,11 @@ LICENSE file included with this module.
 Garlic sold separately. No warranty of werewolf protection implied. May
 be prohibited in some states. Lon Chaney and Warren Zevon references
 provided free of charge.
+
+=head1 CAVEATS
+
+I've not tested this with Apache 2.x. I don't have much idea whether or
+not it will work there. Reports welcome.
 
 =head1 SEE ALSO
 
