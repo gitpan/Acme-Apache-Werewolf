@@ -4,7 +4,7 @@ use Astro::MoonPhase;
 use Apache::Constants qw(:common);
 
 use vars qw($VERSION);
-$VERSION = '1.02';
+$VERSION = '1.03';
 
 sub handler {
     my $r = shift;
